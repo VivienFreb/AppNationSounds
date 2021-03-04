@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ArtistesComponent } from './artistes/artistes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomepageComponent
+    HomepageComponent,
+    ArtistesComponent
   ],
   imports: [
     BrowserModule,

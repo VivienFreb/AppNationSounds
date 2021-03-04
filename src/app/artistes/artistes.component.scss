@@ -1,0 +1,21 @@
+.artistes-container {
+  background: #272727;
+}
+.artistes-container * {
+  color: white;
+}
+
+.artistes-container:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.artiste {
+  float: left;
+  width: 50%;
+  border: pink 1px solid;
+  padding: 20px;
+  text-align: center;
+}
+

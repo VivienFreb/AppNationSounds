@@ -1,0 +1,21 @@
+<div class="artistes-container">
+  <p>Découvrez nos artistes</p>
+
+  <div *ngFor="let artiste of artistes" class="artiste">
+      <div class="image-container">
+        <img src="{{getPicture(artiste.NomDeScene)}}" alt="">
+        <p class="name">{{artiste.NomDeScene}}</p>
+        <p class="festival">{{"Festival"}}</p>
+      </div>
+      <div class="details-container">
+        <p class="style-musique">{{artiste.StyleMusique}}</p>
+        <p class="date"></p>
+        <p class="heure">{{"Heure"}}</p>
+        <p class="scene">{{"Scene"}}</p>
+        <div class="about">
+          À propos
+        </div>
+      </div>
+  </div>
+</div>
+
