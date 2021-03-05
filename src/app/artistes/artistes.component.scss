@@ -1,7 +1,5 @@
-.artistes-container {
+.artistes-component-container{
   background: #272727;
-}
-.artistes-container * {
   color: white;
 }
 
@@ -12,10 +10,46 @@
 }
 
 .artiste {
-  float: left;
   width: 50%;
-  border: pink 1px solid;
-  padding: 20px;
+  float: left;
   text-align: center;
+  margin-bottom: 50px;
 }
 
+.artiste .image-container img{
+  height: 200px;
+}
+
+.artiste .details-container{
+  width: 200px;
+  margin: auto;
+  border: 2px #E07C80 solid;
+  padding: 20px 10px 35px 10px;
+  position: relative;
+}
+
+.artiste .name{font-size: 28px}
+.artiste .festival{font-style: italic;}
+
+.about {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+  background: linear-gradient(90deg, rgba(246,191,117,1) 0%, rgba(224,124,128,1) 50%, rgba(66,80,177,1) 100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%);
+}

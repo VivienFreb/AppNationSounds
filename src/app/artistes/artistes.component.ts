@@ -9,13 +9,11 @@ import {HttpClient} from '@angular/common/http';
 export class ArtistesComponent implements OnInit {
   public artistes;
 
+  public testa;
+
   constructor(private http: HttpClient) {  }
 
-  apiCall(msg){
-    return msg;
-  }
-
-  getPicture(nom){
+  getPictureSrc(nom){
     let pictureName;
     let imgSrc = "assets/artistes/";
     let extension = ".png";
@@ -31,6 +29,13 @@ export class ArtistesComponent implements OnInit {
   makeApiCall(route){
     this.http.get<any>(route).subscribe(data => {
       this.artistes = data['hydra:member'];
+    });
+  }
+
+  test(){
+    this.http.get<any>('http://localhost:8000/api/scenes').subscribe(data => {
+      this.testa = data;
+      console.log(this.testa);
     });
   }
 
