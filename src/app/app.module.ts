@@ -13,6 +13,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { EvenementsComponent } from './evenements/evenements.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PartenairesComponent } from './partenaires/partenaires.component';
     MessagesComponent,
     EvenementsComponent,
     SocialMediaComponent,
-    PartenairesComponent
+    PartenairesComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
