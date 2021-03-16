@@ -14,8 +14,9 @@ export class MessagesComponent implements OnInit {
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://185.216.25.16/api/information').subscribe(data => {
+    this.http.get<any>('http://localhost:8000/api/information').subscribe(data => {
       this.messages.push(data['hydra:member']);
+      console.log('Messages');
       console.log(this.messages);
     });
   }

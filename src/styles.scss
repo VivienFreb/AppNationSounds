@@ -23,7 +23,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -37,3 +36,12 @@ html{
   background-size: cover;
   background-attachment: fixed;
 }
+
+
+//To remove
+body{
+  max-width: 500px!important;
+  margin: 0 auto!important;
+}
+
+.img-banner{width: 100%}

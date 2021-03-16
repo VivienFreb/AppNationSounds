@@ -71,6 +71,7 @@ export class MapService {
           .setPopup(popup)
           .addTo(this.map);
       });
+
       this.map.addControl(new mapboxgl.NavigationControl());
 
       // Add geolocate control to the map.

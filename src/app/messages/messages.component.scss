@@ -35,16 +35,17 @@
 // Next and Prev buttons
 // =========================
 .control {
+  color: #000;
   border: none;
   background-color: transparent;
   outline: 0; // remove blue outline border, but make sure they are still focussable for accessibility
-  //position: absolute;
+  position: absolute;
   cursor: pointer;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5em;
-  color: white;
   font-weight: bold;
   font-size: 3em;
   user-select: none;
@@ -69,8 +70,8 @@
 /* style the arrows */
 .arrow {
   display: block;
-  border-left: 0.1em solid white;
-  border-bottom: 0.1em solid white;
+  border-left: 0.1em solid #DA7A81;
+  border-bottom: 0.1em solid #DA7A81;
   width: 0.5em;
   height: 0.5em;
 
@@ -79,5 +80,22 @@
   }
   &.right {
     transform: rotate(225deg);
+  }
+}
+
+
+.carousel-content{
+  text-align: center;
+  height: 200px;
+  background: white;
+  padding: 15px 5%;
+}
+
+.content-title{
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  & span{
+    color: #f3b876;
   }
 }
