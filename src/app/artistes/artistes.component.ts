@@ -26,22 +26,15 @@ export class ArtistesComponent implements OnInit {
     return imgSrc + nom + extension;
   }
 
-  makeApiCall(route){
-    this.http.get<any>(route).subscribe(data => {
-      this.artistes = data['hydra:member'];
-    });
-  }
-
-  test(){
-    this.http.get<any>('http://localhost:8000/api/scenes').subscribe(data => {
-      this.testa = data;
-      console.log(this.testa);
-    });
-  }
+  // makeApiCall(route){
+  //   this.http.get<any>(route).subscribe(data => {
+  //     this.artistes = data['hydra:member'];
+  //   });
+  // }
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://localhost:8000/api/artistes').subscribe(data => {
+    this.http.get<any>('http://185.216.25.16/api/artistes').subscribe(data => {
       this.artistes = data['hydra:member'];
       console.log(data);
     });

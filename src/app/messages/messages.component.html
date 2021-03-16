@@ -1,1 +1,27 @@
-<h1>On aura nos messages importants ici</h1>
+<div class="carousel">
+  <ng-container *ngFor="let msg of messages[0]; let i = index">
+    <div style="height: 200px; background: blue" *ngIf="i === currentSlide">
+      <p style="color: white">{{msg.Nom}}</p>
+    </div>
+  </ng-container>
+
+  <!-- controls -->
+  <button class="control prev" (click)="onPreviousClick()">
+    <span class="arrow left"></span>
+  </button>
+  <button class="control next" (click)="onNextClick()">
+    <span class="arrow right"></span>
+  </button>
+</div>
+
+<div class="messages-component-container">
+  <h1>On aura nos messages importants ici</h1>
+
+
+  <div class="messages-container">
+    <div *ngFor="let msg of messages" class="message">
+
+    </div>
+  </div>
+</div>
+
