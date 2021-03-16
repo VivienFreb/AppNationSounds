@@ -4,8 +4,8 @@
   <div class="carousel">
     <ng-container *ngFor="let msg of messages[0]; let i = index">
       <div class="carousel-content" *ngIf="i === currentSlide">
-        <h2 class="content-title"><span> {{msg.Type}}</span> - {{msg.Nom}}</h2>
-        <div class="content-text" [innerHTML]="msg.Contenu"></div>
+        <h2 class="content-title" @carouselAnimation><span> {{msg.Type}}</span> - {{msg.Nom}}</h2>
+        <div class="content-text" [innerHTML]="msg.Contenu" @carouselAnimation></div>
       </div>
     </ng-container>
 

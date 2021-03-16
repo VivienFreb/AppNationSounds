@@ -14,6 +14,7 @@ import { EvenementsComponent } from './evenements/evenements.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
 import { MapComponent } from './map/map.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { MapComponent } from './map/map.component';
     EvenementsComponent,
     SocialMediaComponent,
     PartenairesComponent,
-    MapComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
