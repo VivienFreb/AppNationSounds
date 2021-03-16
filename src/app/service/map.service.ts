@@ -33,20 +33,23 @@ export class MapService {
 
       this.points.forEach(point => {
         if(point['Longitude']){
+
+          const longitude = point['Longitude'];
+          const latitude = point['Latitude'];
+
           let newPoint = {
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [point['Longitude'], point['Latitude']]
+              coordinates: [latitude, longitude]
             },
-            properties:{
+            properties: {
               title: 'Oui',
               description: 'Non'
             }
           }
 
           this.geojson.features.push(newPoint);
-          console.log(newPoint)
         }
       })
 
@@ -57,12 +60,9 @@ export class MapService {
         center: [this.lng, this.lat]
       })
 
-      console.log("allo")
       console.log(this.geojson.features);
 
       this.geojson.features.forEach((marker) => {
-        console.log(marker);
-        console.log('marker');
         const popup = new mapboxgl.Popup()
           .setHTML('<h1>' + marker.properties.title + '</h1><p>' + marker.properties.description + '</p>');
 
@@ -70,9 +70,6 @@ export class MapService {
           .setLngLat(marker.geometry.coordinates)
           .setPopup(popup)
           .addTo(this.map);
-
-        console.log('allov15');
-        console.log(markers);
       });
       this.map.addControl(new mapboxgl.NavigationControl());
 
