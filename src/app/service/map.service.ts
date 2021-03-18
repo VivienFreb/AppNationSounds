@@ -11,9 +11,9 @@ export class MapService {
 
   map: mapboxgl.Map;
   style = 'mapbox://styles/mapbox/streets-v11';
-  lat = 37.776;
-  lng = -122.414;
-  zoom = 3;
+  lat = 48.94929861906203;
+  lng = 2.312537711324872;
+  zoom = 14;
   geojson = {
     type: 'FeatureCollection',
     features: []
@@ -26,7 +26,7 @@ export class MapService {
 
   async buildMap(){
 
-    await this.http.get<any>('http://localhost:8000/api/p_o_is').subscribe(data => {
+    await this.http.get<any>('http://185.216.25.16/api/p_o_is').subscribe(data => {
       this.points = data['hydra:member'];
 
       console.log(this.points);
@@ -34,8 +34,11 @@ export class MapService {
       this.points.forEach(point => {
         if(point['Longitude']){
 
+          console.log(this.points);
           const longitude = point['Longitude'];
           const latitude = point['Latitude'];
+          const nom = point['Nom'];
+          const description = point['Description'];
 
           let newPoint = {
             type: 'Feature',
@@ -44,8 +47,9 @@ export class MapService {
               coordinates: [latitude, longitude]
             },
             properties: {
-              title: 'Oui',
-              description: 'Non'
+              title: nom,
+              description: description,
+              icon: 'theatre'
             }
           }
 
