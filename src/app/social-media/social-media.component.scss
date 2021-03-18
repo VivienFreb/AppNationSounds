@@ -1,2 +1,7 @@
 //To remove
-.socials-media-component-container{background:white}
+.socials-media-component-container{background:#272727; color: white; text-align: center; padding: 15px 0}
+
+.socials-media-component-container .social-list .social{
+  display: inline;
+  padding: 0 10px;
+}
