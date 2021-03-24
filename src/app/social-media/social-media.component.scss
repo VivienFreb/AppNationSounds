@@ -1,7 +1,23 @@
 //To remove
-.socials-media-component-container{background:#272727; color: white; text-align: center; padding: 15px 0}
+.socials-media-component-container{background:#272727; color: white; text-align: center; padding: 15px 0;
+  position: relative;}
 
 .socials-media-component-container .social-list .social{
   display: inline;
   padding: 0 10px;
+}
+
+.social-bg-img{
+  position: relative;
+}
+
+.social-bg-img img{
+  width: 100%;
+}
+
+.socials-media-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
