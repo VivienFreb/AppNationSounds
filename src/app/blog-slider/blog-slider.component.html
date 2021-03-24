@@ -1,0 +1,20 @@
+<div class="messages-component-container">
+  <div class="carousel">
+    <ng-container *ngFor="let post of blog_post[0]; let i = index">
+      <div class="carousel-content" *ngIf="i === currentSlide">
+        <h2 class="content-title" @carouselAnimation>{{post.Titre}}</h2>
+        <div class="content-date" [innerHTML]="post.DatePublication | date" @carouselAnimation></div>
+        <div class="content-text" [innerHTML]="post.Contenu" @carouselAnimation></div>
+      </div>
+    </ng-container>
+
+    <!-- controls -->
+    <button class="control prev" (click)="onPreviousClick()">
+      <span class="arrow left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+      <span class="arrow right"></span>
+    </button>
+  </div>
+</div>
+

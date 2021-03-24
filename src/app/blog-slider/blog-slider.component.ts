@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import { trigger, transition, style, animate} from '@angular/animations';
+import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
-  selector: 'app-messages',
-  templateUrl: './messages.component.html',
-  styleUrls: ['./messages.component.scss'],
+  selector: 'app-blog-slider',
+  templateUrl: './blog-slider.component.html',
+  styleUrls: ['./blog-slider.component.scss'],
   animations: [
     trigger('carouselAnimation', [
       transition('void => *', [
@@ -18,30 +18,30 @@ import { trigger, transition, style, animate} from '@angular/animations';
     ])
   ]
 })
-export class MessagesComponent implements OnInit {
-  public messages = [];
+export class BlogSliderComponent implements OnInit {
+  public blog_post = [];
   public currentSlide = 0;
 
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://185.216.25.16/api/information').subscribe(data => {
-      this.messages.push(data['hydra:member']);
-      console.log('Messages');
-      console.log(this.messages);
+    this.http.get<any>('http://185.216.25.16/api/blogs').subscribe(data => {
+      this.blog_post.push(data['hydra:member']);
+      console.log('Blog');
+      console.log(this.blog_post);
     });
   }
 
   onPreviousClick() {
     const previous = this.currentSlide - 1;
-    this.currentSlide = previous < 0 ? this.messages[0].length - 1 : previous;
+    this.currentSlide = previous < 0 ? this.blog_post[0].length - 1 : previous;
     console.log("previous clicked, new current slide is: ", this.currentSlide);
   }
 
   onNextClick() {
     const next = this.currentSlide + 1;
-    this.currentSlide = next === this.messages[0].length ? 0 : next;
+    this.currentSlide = next === this.blog_post[0].length ? 0 : next;
     console.log("next clicked, new current slide is: ", this.currentSlide);
   }
 }

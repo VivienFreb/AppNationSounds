@@ -16,6 +16,7 @@ import { PartenairesComponent } from './partenaires/partenaires.component';
 import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
+import { BlogSliderComponent } from './blog-slider/blog-slider.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     PartenairesComponent,
     MapComponent,
     FooterComponent,
+    BlogSliderComponent,
   ],
   imports: [
     BrowserModule,

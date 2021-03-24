@@ -29,12 +29,9 @@ export class MapService {
     await this.http.get<any>('http://185.216.25.16/api/p_o_is').subscribe(data => {
       this.points = data['hydra:member'];
 
-      console.log(this.points);
-
       this.points.forEach(point => {
         if(point['Longitude']){
 
-          console.log(this.points);
           const longitude = point['Longitude'];
           const latitude = point['Latitude'];
           const nom = point['Nom'];
@@ -63,8 +60,6 @@ export class MapService {
         zoom: this.zoom,
         center: [this.lng, this.lat]
       })
-
-      console.log(this.geojson.features);
 
       this.geojson.features.forEach((marker) => {
         const popup = new mapboxgl.Popup()
