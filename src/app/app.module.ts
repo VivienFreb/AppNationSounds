@@ -15,6 +15,7 @@ import { SocialMediaComponent } from './social-media/social-media.component';
 import { PartenairesComponent } from './partenaires/partenaires.component';
 import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SocialMediaComponent,
     PartenairesComponent,
     MapComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
