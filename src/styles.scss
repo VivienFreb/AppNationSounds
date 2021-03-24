@@ -111,3 +111,12 @@ Parties image + boutons
   font-size: 28px;
   font-weight: bold;
 }
+
+
+
+/**
+Temp Fix space under img
+ */
+img.img-banner {
+  margin-bottom: -5px;
+}
