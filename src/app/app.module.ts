@@ -17,6 +17,8 @@ import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { BlogSliderComponent } from './blog-slider/blog-slider.component';
+import { BlogPageComponent } from './blog-page/blog-page.component';
+import { ArtistePageComponent } from './artiste-page/artiste-page.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { BlogSliderComponent } from './blog-slider/blog-slider.component';
     MapComponent,
     FooterComponent,
     BlogSliderComponent,
+    BlogPageComponent,
+    ArtistePageComponent,
   ],
   imports: [
     BrowserModule,

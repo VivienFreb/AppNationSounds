@@ -37,6 +37,8 @@ html{
   background-attachment: fixed;
 }
 
+//
+
 
 //To remove
 body{
@@ -64,6 +66,7 @@ body{
   cursor: pointer;
   border-radius: 25px;
   background: linear-gradient(90deg, rgba(246,191,117,1) 0%, rgba(224,124,128,1) 50%, rgba(66,80,177,1) 100%);
+  margin: 0 auto;
 }
 
 .about:hover{
@@ -90,6 +93,15 @@ body{
   display: inline;
   padding: 0 10px;
 }
+.partenaire img{transition: all .5s ease-in-out}
+.partenaire img:hover{
+  transition: all .5s ease-in-out;
+  transform: scale(1.2);
+  filter: drop-shadow(2px 2px 2px black);
+}
+a{
+  text-decoration: none;
+}
 
 /**
 Parties image + boutons
@@ -110,6 +122,12 @@ Parties image + boutons
   border-radius: 40px;
   font-size: 28px;
   font-weight: bold;
+  transition: all .5s ease-in-out;
+}
+
+.img-button-container .btn:hover{
+  transform: translate(-50%, -50%) scale(1.2);
+  transition: all .5s ease-in-out;
 }
 
 
@@ -120,3 +138,5 @@ Temp Fix space under img
 img.img-banner {
   margin-bottom: -5px;
 }
+
+

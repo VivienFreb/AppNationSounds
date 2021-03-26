@@ -2,58 +2,36 @@
 
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
 
+
+
   <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a class="bordered" href="#">Billeterie</a>
+    <a class="bordered" href="#">Carte</a>
+    <br>
+    <a href="/">Accueil</a>
+    <hr>
+    <a href="#">Programme</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
+    <a href="/blog">Blog</a>
+    <hr>
   </div>
 
 </div>
 
-<span (click)="openNav()">open</span>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-  <!--  Show this only on mobile to medium screens  -->
-  <a class="navbar-brand d-lg-none" href="#">Navbar</a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <!--  Use flexbox utility classes to change how the child elements are justified  -->
-  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-
-
-    <!--   Show this only lg screens and up   -->
-    <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
-
-
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-    </ul>
-  </div>
+<nav>
+  <span class="menu-toggle" (click)="openNav()">Menu</span>
+  <div id="logo"><a href="/"><img src="assets/logos/logo.png" alt=""></a></div>
+  <span class="language-toggle" (click)="openNav()">FR</span>
 </nav>
+
+

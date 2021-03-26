@@ -5,6 +5,11 @@
         <h2 class="content-title" @carouselAnimation>{{post.Titre}}</h2>
         <div class="content-date" [innerHTML]="post.DatePublication | date" @carouselAnimation></div>
         <div class="content-text" [innerHTML]="post.Contenu" @carouselAnimation></div>
+
+        <a routerLink="/blog">
+          <div class="about" @carouselAnimation>En savoir plus</div>
+        </a>
+
       </div>
     </ng-container>
 

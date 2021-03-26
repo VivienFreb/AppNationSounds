@@ -1,7 +1,36 @@
-<p>homepage works!</p>
+<app-messages></app-messages>
 
-<div class="component">
-  <tr *ngFor="let resultat of res">
-    <td>{{resultat.StyleMusique}}</td>
-  </tr>
+<img class="img-banner" src="assets/banniere/banniere-1.png" alt="">
+
+<app-artistes></app-artistes>
+
+<div class="img-button-container">
+  <img class="img-banner" src="assets/img/firework.png" alt="">
+  <a>
+    <div class="btn">
+      BILLETERIE
+
+    </div>
+  </a>
+</div>
+
+<app-blog-slider></app-blog-slider>
+
+<app-map></app-map>
+
+<app-evenements></app-evenements>
+<app-social-media></app-social-media>
+
+<div class="partenaires-container">
+  <div class="partenaires-list">
+    <a routerLink="/partenaires"><div class="partenaire"><img src="assets/logos/wis.png" alt="logo wis"></div></a>
+    <a routerLink="/partenaires"><div class="partenaire"><img src="assets/logos/skyrock.png" alt="logo skyrock"></div></a>
+    <a routerLink="/partenaires"><div class="partenaire"><img src="assets/logos/redbull.png" alt="logo Redbull"></div></a>
+    <a routerLink="/partenaires"><div class="partenaire"><img src="assets/logos/cstar.png" alt="logo cstar"></div></a>
+    <a routerLink="/partenaires"><div class="partenaire"><img src="assets/logos/HSBC.png" alt="logo HSBC"></div></a>
+  </div>
+  <a routerLink="/partenaires">
+    <div class="about">Nos partenaires</div>
+  </a>
+
 </div>

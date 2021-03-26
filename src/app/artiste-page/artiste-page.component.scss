@@ -1,0 +1,50 @@
+.artistes-component-container{background: #272727; color: white}
+
+.image-container{
+  padding: 50px;
+}
+.image-container img{
+  width: 100%;
+}
+
+.panel{
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-sizing: border-box;
+  transform: translateY(-20px);
+}
+
+.panel-content{
+  border: 1px #E07C80 solid;
+  padding-top: 20px;
+}
+
+.panel-genre{
+  color: #E07C80;
+}
+
+.panel-description{
+  background: #E07C80;
+  color: white;
+}
+
+.panel-genre, .panel-description{
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.artistes-component-container .about.accordion{
+  width: 40px;
+  font-size: 30px;
+  z-index: 50;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.artistes-component-container .about.accordion:hover{
+  opacity: 1;
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+}

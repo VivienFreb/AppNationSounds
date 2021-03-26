@@ -1,0 +1,27 @@
+<div class="artistes-component-container">
+  <h2>On aura les artistes ici avec menu déroulant (cf Maquette Jesica)</h2>
+
+  <div class="artistes-container">
+    <div *ngFor="let artiste of artistes" class="artiste">
+      <div class="image-container">
+        <img src="{{getPictureSrc(artiste.NomDeScene)}}" alt="">
+        <p class="name">{{artiste.NomDeScene}}</p>
+        <p class="festival">- {{"Festival"}} -</p>
+      </div>
+      <div class="details-container">
+        <div (click)="toggleAccordion($event)" class="about accordion">
+          +
+        </div>
+        <div class="panel">
+          <div class="panel-content">
+            <div class="panel-genre">
+              [ {{artiste.StyleMusique}} ]
+            </div>
+            <div class="panel-description" [innerHTML]="artiste.Description"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
