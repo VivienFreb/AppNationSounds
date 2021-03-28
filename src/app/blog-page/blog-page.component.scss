@@ -1,3 +1,24 @@
 .blog-component-container{
-  background: white;
+  background: #272727;
+  padding: 7vw;
+}
+.blog-title{
+  color:#E07C80;
+  text-transform: uppercase;
+  }
+.titleblog{
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.blog-date{
+  color:#E07C80;
+  font-style: italic;
+}
+.blog-content{
+  color: white;
+}
+.blog-post{
+  margin-top: 20px;
 }
