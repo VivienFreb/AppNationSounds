@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BlogSliderComponent } from './blog-slider/blog-slider.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ArtistePageComponent } from './artiste-page/artiste-page.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ArtistePageComponent } from './artiste-page/artiste-page.component';
     BlogSliderComponent,
     BlogPageComponent,
     ArtistePageComponent,
+    FaqPageComponent,
   ],
   imports: [
     BrowserModule,

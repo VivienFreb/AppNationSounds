@@ -130,6 +130,6 @@
   },
   "defaultProject": "FestivalFront",
   "cli": {
-    "analytics": false
+    "analytics": "ee20996c-8866-4e6e-8ac0-44f4e6a82834"
   }
 }

@@ -3,7 +3,13 @@
 
   <div class="partenaires-container">
     <div *ngFor="let partenaire of partenaires" class="partenaire">
-      {{partenaire}}
+      <p>{{partenaire.Nom}}</p>
+      <p [innerHTML]="partenaire.Description"></p>
+      <p>{{partenaire.Site}}</p>
+      <a href="{{partenaire.Facebook}}">Facebook</a>
+      <a href="{{partenaire.Twitter}}">Twitter</a>
+      <a href="{{partenaire.Instagram}}">Instagram</a>
+      <hr>
     </div>
   </div>
 </div>
