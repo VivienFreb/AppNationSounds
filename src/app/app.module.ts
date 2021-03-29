@@ -20,6 +20,9 @@ import { BlogSliderComponent } from './blog-slider/blog-slider.component';
 import { BlogPageComponent } from './blog-page/blog-page.component';
 import { ArtistePageComponent } from './artiste-page/artiste-page.component';
 import { FaqPageComponent } from './faq-page/faq-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
+import { CguPageComponent } from './cgu-page/cgu-page.component';
+import { InformationsPageComponent } from './informations-page/informations-page.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
     BlogPageComponent,
     ArtistePageComponent,
     FaqPageComponent,
+    ContactPageComponent,
+    CguPageComponent,
+    InformationsPageComponent,
   ],
   imports: [
     BrowserModule,
