@@ -1,8 +1,9 @@
+<img class="img-banner" src="assets/banniere/nos-artistes.png" alt="">
 <div class="artistes-component-container">
 
   <div class="artistes-container">
     <div *ngFor="let artiste of artistes" class="artiste">
-      <div class="image-container">
+      <div class="image-container" id="{{artiste.NomDeScene}}">
         <img src="{{getPictureSrc(artiste.NomDeScene)}}" alt="">
         <p class="name">{{artiste.NomDeScene}}</p>
         <p class="festival">- {{"Festival"}} -</p>
@@ -22,4 +23,14 @@
       </div>
     </div>
   </div>
+</div>
+<div class="about">aaaa</div>
+<div class="img-button-container">
+  <img class="img-banner" src="assets/img/firework.png" alt="">
+  <a>
+    <div class="btn">
+      BILLETERIE
+
+    </div>
+  </a>
 </div>

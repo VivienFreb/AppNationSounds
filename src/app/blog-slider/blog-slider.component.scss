@@ -83,11 +83,15 @@
 }
 
 
-.carousel-content{
+.blog-slider-component-container .carousel .carousel-content{
   text-align: center;
-  height: 200px;
+  min-height: 200px;
   background: white;
   padding: 15px 5%;
+}
+
+.carousel-content .content-text{
+  padding-bottom: 40px;
 }
 
 .content-title{

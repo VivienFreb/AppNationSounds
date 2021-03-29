@@ -4,7 +4,7 @@
 
 .socials-media-component-container .social-list .social{
   display: inline;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .social-bg-img{
@@ -20,4 +20,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
+  width: 75vw;
+}
+
+@media (max-width: 450px) {
+  .social img{
+    width: 30px;
+  }
+
+  .socials-media-component-container .social-list .social{
+    padding: 0 2px;
+  }
+
+  .socials-media-component-container{
+    padding-bottom: 30px;
+  }
 }

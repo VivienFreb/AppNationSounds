@@ -38,3 +38,10 @@ footer.footer-container{
 .footer-container .heart{
   color: red;
 }
+
+@media (max-width: 450px) {
+
+  .footer-container .colonne{
+    width: 100%;
+  }
+}
