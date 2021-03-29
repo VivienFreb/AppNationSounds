@@ -1,11 +1,16 @@
+<img class="img-banner" src="assets/banniere/banniere-1.png" alt="">
+
 <div class="blog-component-container">
  <h1 class="titleblog">INFORMATIONS <br> GENERALES</h1>
 
   <div class="blog-container">
     <div *ngFor="let blog_post of blog_posts[0]" class="blog-post">
+      <hr class="separateur-blog">
       <h2 class="blog-title">{{blog_post.Titre}}</h2>
       <h2 class="blog-date">{{blog_post.DatePublication | date}}</h2>
       <div class="blog-content" [innerHTML]="blog_post.Contenu"></div>
     </div>
   </div>
 </div>
+
+<app-social-media></app-social-media>

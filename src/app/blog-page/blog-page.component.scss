@@ -1,24 +1,41 @@
 .blog-component-container{
   background: #272727;
-  padding: 7vw;
-}
-.blog-title{
-  color:#E07C80;
-  text-transform: uppercase;
+  padding: 10vw;
   }
+
 .titleblog{
   font-weight: bold;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
+  margin-bottom: 50px;
 }
+
+.blog-title{
+   color:#E07C80;
+   text-transform: uppercase;
+   font-size: 18px;
+  font-weight: bold;
+ }
 .blog-date{
   color:#E07C80;
   font-style: italic;
+  font-size: 12px;
 }
+
 .blog-content{
   color: white;
 }
 .blog-post{
   margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.separateur-blog{
+  margin-bottom: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 3px;
+  background-color: #DA7A81;
+  border: none;
 }
