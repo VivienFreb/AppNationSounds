@@ -2,17 +2,35 @@
 
 <div class="partenaires-component-container">
     <div class="partenaires-container">
-      <div *ngFor="let partenaire of partenaires" class="partenaire">
+      <a *ngFor="let partenaire of partenaires" class="partenaire">
         <p class="title-partenaire">{{partenaire.Nom}}</p>
         <img src="/assets/partenaire/{{partenaire.Nom | lowercase}}.png" alt="">
         <p [innerHTML]="partenaire.Description" class="text-partenaire"></p>
-        <p class="lien-partenaire">{{partenaire.Site}}</p>
-        <a href="{{partenaire.Facebook}}"><img src="assets/logos/facebook.png" alt=""></a>
-        <a href="{{partenaire.Twitter}}"><img src="assets/logos/twitter.png" alt=""></a>
-        <a href="{{partenaire.Instagram}}"><img src="assets/logos/instagram.png" alt=""></a>
+
+        <div class="colonne-left">
+          <div class="bouton-partenaire">
+            <p>
+              <a href="{{partenaire.Site}}" class="lien-partenaire">Visiter le site</a>
+            </p>
+          </div>
         </div>
+
+        <div class="colonne-rigt">
+          <div>
+            <a href="{{partenaire.Facebook}}"><img src="assets/logos/facebook.png" alt="" class="logo-reseaux"></a>
+            <a href="{{partenaire.Twitter}}"><img src="assets/logos/twitter.png" alt="" class="logo-reseaux"></a>
+            <a href="{{partenaire.Instagram}}"><img src="assets/logos/instagram.png" alt="" class="logo-reseaux"></a>
+          </div>
+        </div>
+
+        <br>
+
+        <hr class="separateur-faq">
+
+      </a>
     </div>
 </div>
+
 
 
 <img class="img-banner" src="assets/banniere/banniere-1.png" alt="">

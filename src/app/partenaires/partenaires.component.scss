@@ -2,7 +2,7 @@
 
 .partenaires-component-container{
   background: #272727;
-  padding: 10px;
+  padding: 5px;
 }
 
 .partenaires-container{
@@ -10,6 +10,9 @@
   color: white;
 }
 
+.partenaire{
+
+}
 
 .title-partenaire{
   font-weight: bold;
@@ -17,11 +20,72 @@
   color: #FFFFFF;
   font-size: 20px;
   margin-bottom: 10px;
-}
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  }
 
 .text-partenaire{
   font-weight: normal;
   text-align: center;
   color: #FFFFFF;
   font-size: 12px;
+  padding: 5vw;
 }
+
+.bouton-partenaire{
+  display: block;
+  width:150px;
+  line-height:40px;
+  text-align:center;
+  vertical-align:middle;
+  background-color: #DA7A81;
+  color:white;
+  text-decoration:none;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.lien-partenaire{
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-reseaux{
+  width: 40px;
+  height: 40px;
+}
+
+.colonne-left{
+  float: left;
+  width: 50%;
+}
+
+.colonne-rigt{
+  float: right;
+  width: 50%;
+}
+
+.separateur-faq{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 3px;
+  background-color: #DA7A81;
+  border: none;
+}
+
+@media (max-width: 450px) {
+
+  .colonne-left {
+    float: none;
+    width: 100%;
+     }
+
+  .colonne-rigt {
+    float: none;
+    width: 100%;
+  }
+}
+
