@@ -1,14 +1,15 @@
 <img class="img-banner" src="assets/banniere/banniere-1.png" alt="">
 
 <div class="faq-page-component-container">
-    <h2 class="titlefaq">FAQ</h2>
+    <h2 class="titlefaq">FOIRES AUX QUESTIONS</h2>
 
 
   <div class="faq-container">
     <div *ngFor="let faq of faq_list[0]" class="faq-post">
+      <hr class="separateur-faq">
       <div class="faq-question" [innerHTML]="faq.Question"></div>
       <div class="faq-answer" [innerHTML]="faq.Reponse"></div>
-      <hr class="separateur-faq">
+
     </div>
   </div>
 </div>
