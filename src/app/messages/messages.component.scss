@@ -85,9 +85,13 @@
 
 .carousel-content{
   text-align: center;
-  height: 200px;
+  min-height: 200px;
   background: white;
   padding: 15px 5%;
+}
+
+.content-text{
+  padding-bottom: 40px!important;
 }
 
 .content-title{

@@ -26,6 +26,10 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+a{
+  text-decoration: none!important;
+}
+
 // General CSS Styles
 html{
   background: rgb(246,191,117);
@@ -73,6 +77,7 @@ body{
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   opacity: 0.9;
 }
+
 
 /**
   Partie partenaires
@@ -130,6 +135,12 @@ Parties image + boutons
   transition: all .5s ease-in-out;
 }
 
+@media (max-width: 450px){
+  .img-button-container .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+}
 
 
 /**
