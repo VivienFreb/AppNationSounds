@@ -4,9 +4,11 @@
     <div class="partenaires-container">
       <a *ngFor="let partenaire of partenaires" class="partenaire">
         <p class="title-partenaire">{{partenaire.Nom}}</p>
-        <img src="/assets/partenaire/{{partenaire.Nom | lowercase}}.png" alt="">
-        <p [innerHTML]="partenaire.Description" class="text-partenaire"></p>
 
+        <div class="encadrement">
+        <img src="/assets/partenaire/{{partenaire.Nom | lowercase}}.png" alt="" class="img-partenaire">
+        <p [innerHTML]="partenaire.Description" class="text-partenaire"></p>
+        </div>
         <div class="colonne-left">
           <div class="bouton-partenaire">
             <p>
