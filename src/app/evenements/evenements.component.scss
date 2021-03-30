@@ -13,7 +13,7 @@
   text-align: center;
   color: #FFFFFF;
   font-size: 24px;
-  padding-bottom: 0px;
+  padding-bottom: -10px;
   padding-top: 50px;
   text-transform: uppercase;
 }
@@ -37,21 +37,25 @@
 }
 
 .date-event{
+  margin-top: 20px;
   background: #ffffff;
   color: #DA7A81;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-size: 16px;
   text-align: center;
   padding: 1vw;
+  border-radius: 5px;
 }
 
 .description-event{
   font-weight: normal;
   text-align: center;
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .lieu-event{
@@ -76,4 +80,60 @@
   text-align:center;
   Margin : auto;
   Display:flex;
+}
+
+
+.bouton-tournoi{
+    display: block;
+    width: 100%;
+    line-height:40px;
+    text-align:center;
+    vertical-align:middle;
+    color: #DA7A81;
+    background-color: #ffffff;
+    text-decoration:none;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-right: 50px;
+    }
+
+.lien-tournoi{
+  color: #7c5b9b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bouton-places{
+  display: block;
+  width: 100%;
+  line-height:40px;
+  text-align: left;
+  vertical-align:middle;
+  background-color: #f3b876;
+  text-decoration:none;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+.couleur-texte{
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.colonne-left{
+  float: left;
+  width: 40%;
+}
+
+.colonne-rigt{
+  float: right;
+  width: 60%;
+}
+
+.boutons-events{
+  margin-left: 20px;
+  margin-right: 20px;
 }

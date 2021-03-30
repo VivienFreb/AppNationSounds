@@ -7,12 +7,36 @@
       <h3 class="nom-event">{{event.Nom}}</h3>
 
       <div class="container-events">
-      <p class="places-event">[{{event.Places}} places disponibles]</p>
       <h4 class="date-event">{{event.DateDebut|date}}</h4>
       <p class="description-event" [innerHTML]="event.Description">{{event.Description}}</p>
       <p class="lieu-event">{{event.Emplacement}}</p>
       </div>
 
     </div>
+
+    <div class="boutons-events">
+
+    <div class="colonne-left">
+      <div class="bouton-places">
+        <p>
+          <a class="couleur-texte">100 places</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="colonne-rigt">
+      <div class="bouton-tournoi">
+        <p>
+          <a href="#" class="lien-tournoi">Je m'inscris</a>
+        </p>
+      </div>
+    </div>
+
+      <br>
+
+    </div>
+    </div>
+
   </div>
-</div>
+
+
