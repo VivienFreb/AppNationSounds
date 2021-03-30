@@ -1,0 +1,145 @@
+.cgu-page-component-container{
+  background: #f6bf75;
+  background: linear-gradient(180deg, #f6bf75 0%, #e07c80 50%, #4250b1 100%);
+}
+
+.title-container{
+  background: #272727;
+  padding: 2vw;
+  padding-top: 50px;
+}
+
+.titlecontact{
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-title{
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom:20px;
+}
+
+.bouton-faq{
+    display: block;
+    width:150px;
+    line-height:40px;
+    text-align:center;
+    vertical-align:middle;
+    background-color: #ffffff;
+    color: #f3b876;
+    text-decoration:none;
+    border-radius: 50px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.formulaire-container{
+  background: #f6bf75;
+  background: linear-gradient(180deg, #f6bf75 0%, #e07c80 50%, #4250b1 100%);
+  padding: 8vw;
+  padding-top: 30px;
+}
+
+.formulaire-title{
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.formulaire-sous-title{
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.champs-formulaire{
+  border-radius: 50px;
+  border-color: white;
+  width: 100%;
+}
+
+.champs-description{
+  border-radius: 10px;
+  border-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.colonne-left {
+  float: left;
+  width: 50%;
+}
+
+.colonne-rigt{
+  float: right;
+  width: 50%;
+}
+
+.bouton-formulaire{
+  display: block;
+  width:150px;
+  line-height:40px;
+  text-align:center;
+  vertical-align:middle;
+  background-color: #ffffff;
+  color: #b36cdd;
+  text-decoration:none;
+  border-radius: 50px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.conditions{
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+}
+
+.anotation{
+  font-size: 10px;
+  font-weight: normal;
+  color: red;
+  text-align: center;
+}
+
+.espacement{
+  padding-left: 5px;
+}
+
+.asterix{
+  color: red;
+}
+
+.asterix-champs{
+  color: red;
+  padding-bottom: 0px;
+}
+
+
+@media (max-width: 350px) {
+
+  .colonne-left {
+    float: none;
+    width: 100%;
+  }
+
+  .colonne-rigt {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -20px;
+  }
+}

@@ -1,3 +1,133 @@
 //To remove
-.partenaires-component-container{background: violet}
+
+.partenaires-component-container{
+  background: #272727;
+  padding: 5px;
+}
+
+.partenaires-container{
+  background: #272727;
+  color: white;
+}
+
+
+.title-partenaire{
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-color: #DA7A81;
+  }
+
+
+
+.encadrement{
+  border-color: #DA7A81;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -40px;
+  margin-bottom: -25px;
+}
+
+.text-partenaire{
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+  padding: 5vw;
+}
+
+.bouton-partenaire{
+  display: block;
+  width:150px;
+  line-height:40px;
+  text-align:center;
+  vertical-align:middle;
+  background-color: #DA7A81;
+  color:white;
+  text-decoration:none;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.lien-partenaire{
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.logo-reseaux{
+  width: 40px;
+  height: 40px;
+}
+
+.colonne-left{
+  float: left;
+  width: 50%;
+}
+
+.colonne-rigt{
+  float: right;
+  width: 50%;
+}
+
+
+.separateur-faq{
+  margin-bottom: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
+  height: 3px;
+  background-color: #272727;
+  border: none;
+}
+
+
+.panel{
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-sizing: border-box;
+  transform: translateY(-20px);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+
+  .colonne-left {
+    float: none;
+    width: 100%;
+     }
+
+  .colonne-rigt {
+    float: none;
+    width: 100%;
+  }
+
+  .encadrement{
+    padding-bottom: 40px;
+    margin-bottom: -85px;
+  }
+
+  .text-partenaire{
+    padding: 5vw;
+    margin-bottom: 60px;
+  }
+
+}
 

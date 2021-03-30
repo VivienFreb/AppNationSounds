@@ -1,15 +1,38 @@
-<div class="partenaires-component-container">
-  <p>On aura les partenaires ici (cf. Maquette Jess)</p>
+<img class="img-banner" src="assets/banniere/nos-artistes.png" alt="" xmlns="http://www.w3.org/1999/html">
 
-  <div class="partenaires-container">
-    <div *ngFor="let partenaire of partenaires" class="partenaire">
-      <p>{{partenaire.Nom}}</p>
-      <p [innerHTML]="partenaire.Description"></p>
-      <p>{{partenaire.Site}}</p>
-      <a href="{{partenaire.Facebook}}">Facebook</a>
-      <a href="{{partenaire.Twitter}}">Twitter</a>
-      <a href="{{partenaire.Instagram}}">Instagram</a>
-      <hr>
+<div class="partenaires-component-container">
+    <div class="partenaires-container">
+      <a *ngFor="let partenaire of partenaires" class="partenaire">
+        <p class="title-partenaire">{{partenaire.Nom}}</p>
+
+        <div class="encadrement">
+        <img src="/assets/partenaire/{{partenaire.Nom | lowercase}}.png" alt="" class="img-partenaire">
+        <p [innerHTML]="partenaire.Description" class="text-partenaire"></p>
+        </div>
+        <div class="colonne-left">
+          <div class="bouton-partenaire">
+            <p>
+              <a href="{{partenaire.Site}}" class="lien-partenaire">Visiter le site</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="colonne-rigt">
+          <div>
+            <a href="{{partenaire.Facebook}}"><img src="assets/logos/facebook.png" alt="" class="logo-reseaux"></a>
+            <a href="{{partenaire.Twitter}}"><img src="assets/logos/twitter.png" alt="" class="logo-reseaux"></a>
+            <a href="{{partenaire.Instagram}}"><img src="assets/logos/instagram.png" alt="" class="logo-reseaux"></a>
+          </div>
+        </div>
+
+        <br>
+
+        <hr class="separateur-faq">
+
+      </a>
     </div>
-  </div>
 </div>
+
+
+
+<img class="img-banner" src="assets/banniere/banniere-1.png" alt="">

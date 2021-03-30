@@ -1,1 +1,77 @@
-<p>contact-page works!</p>
+<div class="contact-page-component-container">
+
+  <div class="title-container">
+    <h1 class="titlecontact">Une question ?</h1>
+    <h2 class="contact-title">Consultez notre FAQ !</h2>
+
+      <div class="bouton-FAQ">
+        <p>
+          <a href="/faq-page" class="bouton-faq">FAQ</a>
+        </p>
+      </div>
+  </div>
+
+  <div class="formulaire-container">
+    <h3 class="formulaire-title">Il vous manque une information ?</h3>
+    <h4 class="formulaire-sous-title">Contactez-nous</h4>
+
+    <form action="/ma-page-de-traitement" method="post">
+
+
+      <div class="colonne-left">
+        <div >
+          <label for="conditionsgéné" class="asterix-champs">*</label>
+          <input type="text" placeholder="Nom" id="name" name="user_firstname" class="champs-formulaire" required>
+        </div>
+      </div>
+
+      <div class="colonne-rigt">
+        <div>
+          <label for="conditionsgéné" class="asterix-champs">*</label>
+          <input type="text" placeholder="Prénom" id="name" name="user_name" class="champs-formulaire" required>
+        </div>
+      </div>
+
+      <br>
+      <div>
+        <label for="conditionsgéné" class="asterix-champs">*</label>
+        <input type="email" placeholder="E-mail" id="mail" name="user_mail" class="champs-formulaire" required>
+      </div>
+
+      <br>
+      <div>
+        <label for="conditionsgéné" class="asterix-champs">*</label>
+        <input type="text" placeholder="+33" id="name" name="user_number" class="champs-formulaire" required>
+      </div>
+
+      <br>
+      <div>
+        <label for="conditionsgéné" class="asterix-champs">*</label>
+        <textarea id="msg" placeholder="Demande" name="user_message" class="champs-description" required></textarea>
+      </div>
+      <br>
+
+      <div class="conditions">
+      <div>
+          <input type="checkbox" id="commercial" name="commercial">
+          <label for="commercial" class="espacement">J'accepte de recevoir les offres commerciales de vos partenaires</label>
+        </div>
+      <div>
+          <input type="checkbox" id="conditionsgéné" name="conditionsgéné" aria-required="true">
+          <label for="conditionsgéné" class="espacement"><span class="asterix">* </span>J'accepte les conditions générales d'utilisations</label>
+        </div>
+      </div>
+
+      <br>
+      <div class="button">
+        <button type="submit" class="bouton-formulaire">Envoyer</button>
+        <br>
+        <p class="anotation">* Champs obligatoires</p>
+      </div>
+
+
+    </form>
+
+  </div>
+
+  <app-social-media></app-social-media>
