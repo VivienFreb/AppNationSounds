@@ -1,2 +1,79 @@
 //To remove
-.events-component-container{background: red}
+.events-component-container{
+  background: #f6bf75;
+  background: linear-gradient(180deg, #f6bf75 0%, #e07c80 50%, #4250b1 100%);
+}
+
+.events-container{
+  padding: 10vw;
+}
+
+.title-events{
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 24px;
+  padding-bottom: 0px;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+
+.nom-event{
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.places-event{
+  font-weight: normal;
+  text-align: center;
+  color: #f3b876;
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+}
+
+.date-event{
+  background: #ffffff;
+  color: #DA7A81;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 16px;
+  text-align: center;
+  padding: 1vw;
+}
+
+.description-event{
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.lieu-event{
+  font-weight: normal;
+  text-align: center;
+  color: #f3b876;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.container-events{
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.img-events{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align:center;
+  Margin : auto;
+  Display:flex;
+}

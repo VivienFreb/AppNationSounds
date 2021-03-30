@@ -1,12 +1,18 @@
 <div class="events-component-container">
-  <h2>On aura les events ici</h2>
+  <h2 class="title-events">Nos événements</h2>
 
   <div class="events-container">
     <div *ngFor="let event of events" class="event">
+      <img src="/assets/logos/{{event.Nom}}.png" alt="" class="img-events">
       <h3 class="nom-event">{{event.Nom}}</h3>
+
+      <div class="container-events">
+      <p class="places-event">[{{event.Places}} places disponibles]</p>
       <h4 class="date-event">{{event.DateDebut|date}}</h4>
+      <p class="description-event" [innerHTML]="event.Description">{{event.Description}}</p>
       <p class="lieu-event">{{event.Emplacement}}</p>
-      <p class="description-event" [innerHTML]="event.Description" >{{event.Description}}</p>
+      </div>
+
     </div>
   </div>
 </div>
