@@ -142,10 +142,14 @@ Parties image + boutons
   border-radius: 40px;
   font-size: 28px;
   font-weight: bold;
-  transition: all .5s ease-in-out;
 }
 
-.img-button-container .btn:hover{
+
+.btn-animation{
+  transition: all .5s ease-in-out!important;
+}
+
+.btn-animation:hover{
   transform: translate(-50%, -50%) scale(1.2);
   transition: all .5s ease-in-out;
 }
