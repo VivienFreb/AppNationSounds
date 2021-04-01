@@ -2,18 +2,20 @@
   <h2>Découvrez nos artistes</h2>
 
   <div class="artistes-container container">
-    <div *ngFor="let artiste of artistes" class="artiste">
+
+
+    <div *ngFor="let concert of concerts" class="artiste">
       <div class="image-container">
-        <img src="{{getPictureSrc(artiste.NomDeScene)}}" alt="">
-        <p class="name">{{artiste.NomDeScene}}</p>
-        <p class="festival">- {{"Festival"}} -</p>
+        <img src="{{getPictureSrc(concert.Artiste.NomDeScene)}}" alt="">
+        <p class="name">{{concert.Artiste.NomDeScene}}</p>
+        <p class="festival">- {{concert.Nom}} -</p>
       </div>
       <div class="details-container">
-        <p class="style-musique">{{artiste.StyleMusique}}</p>
+        <p class="style-musique">{{concert.Artiste.StyleMusique}}</p>
         <p class="date"></p>
-        <p class="heure">{{"Heure"}}</p>
-        <p class="scene">{{"Scene"}}</p>
-        <a href="/artistes#{{artiste.NomDeScene}}">
+        <p class="heure">{{formatDate(concert.DateDebut)}}</p>
+        <p class="scene"></p>
+        <a href="/artistes#{{concert.Artiste.NomDeScene}}">
           <div class="about">
             À propos
           </div>

@@ -13,8 +13,8 @@ export class SocialMediaComponent implements OnInit {
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://localhost:8000/api/festivals/1').subscribe(data => {
-      this.social_medias = data['hydra:member'];
+    this.http.get<any>('http://185.216.25.16/api/festivals/1').subscribe(data => {
+      this.social_medias = data;
       console.log('Festivals');
       console.log(this.social_medias);
     });

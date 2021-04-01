@@ -6,6 +6,17 @@
    License: none (public domain)
 */
 
+@font-face {
+  font-family: "Gotham";
+  src: url("assets/fonts/gotham.otf") format("otf"),
+  url("/assets/fonts/gotham.ttf") format("ttf");
+}
+
+*{
+  font-family: Gotham, sans-serif;
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

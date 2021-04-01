@@ -60,6 +60,16 @@
   margin-bottom: 30px;
 }
 
+.artiste .heure{
+  color: black;
+  background: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
 @media (max-width: 450px){
   .artiste{
     width: 100%;

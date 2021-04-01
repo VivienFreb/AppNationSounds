@@ -8,6 +8,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class ArtistesComponent implements OnInit {
   public artistes;
+  public concerts;
 
   constructor(private http: HttpClient) {  }
 
@@ -32,10 +33,32 @@ export class ArtistesComponent implements OnInit {
 
   ngOnInit(): void {
     // Simple GET request with response type <any>
-    this.http.get<any>('http://185.216.25.16/api/artistes').subscribe(data => {
-      this.artistes = data['hydra:member'];
-      console.log(data);
+    this.http.get<any>('http://185.216.25.16/api/concerts').subscribe(data => {
+      this.concerts = data['hydra:member'];
+
+      if(this.concerts){
+        this.concerts.forEach(concert => {
+          this.http.get<any>('http://185.216.25.16' + concert.Artistes).subscribe(data => {
+            concert.Artiste = data;
+          })
+        })
+      }
+
+      console.log("Concerts");
+      console.log(this.concerts);
     });
+  }
+
+  formatDate(date){
+    date = new Date(date);
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+
+    let heure = hours + " : " + minutes;
+    if(minutes == 0){
+      heure = heure + "0";
+    }
+    return heure;
   }
 
 }

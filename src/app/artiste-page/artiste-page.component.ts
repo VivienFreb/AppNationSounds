@@ -31,12 +31,24 @@ export class ArtistePageComponent implements OnInit {
   // }
 
   ngOnInit(): void {
+
     // Simple GET request with response type <any>
     this.http.get<any>('http://185.216.25.16/api/artistes').subscribe(data => {
       this.artistes = data['hydra:member'];
       console.log(this.artistes);
+
+      let anch = decodeURIComponent(window.location.hash.substr(1));
+      console.log(anch);
+      document.getElementById(anch).scrollIntoView();
+    }, (error) => {
+      console.log(error)
+    }, () => {
+      let anch = decodeURIComponent(window.location.hash.substr(1));
+      console.log(anch);
+      // document.getElementById(anch).scrollIntoView();
     });
   }
+
 
   toggleAccordion(event){
     console.log(event);
