@@ -63,7 +63,7 @@
   text-align: center;
   color: #f3b876;
   font-size: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .container-events{
@@ -95,7 +95,14 @@
     border-radius: 50px;
     margin: 0 auto;
     margin-right: 50px;
+    transition: all .5s ease-in;
     }
+
+.bouton-tournoi:hover {
+    color: #ffffff;
+    background-color: #DA7A81;
+    transition: all .5s ease-in;
+}
 
 .lien-tournoi{
   color: #7c5b9b;
