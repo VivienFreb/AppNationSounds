@@ -32,10 +32,11 @@ export class ArtistesComponent implements OnInit {
   // }
 
   ngOnInit(): void {
-    // Simple GET request with response type <any>
+    // Get Artists via routes
     this.http.get<any>('http://185.216.25.16/api/concerts').subscribe(data => {
       this.concerts = data['hydra:member'];
 
+      // Get Concert where Artist is
       if(this.concerts){
         this.concerts.forEach(concert => {
           this.http.get<any>('http://185.216.25.16' + concert.Artistes).subscribe(data => {
@@ -43,7 +44,6 @@ export class ArtistesComponent implements OnInit {
           })
         })
       }
-
       console.log("Concerts");
       console.log(this.concerts);
     });

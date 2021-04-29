@@ -14,6 +14,7 @@
         <p class="style-musique">{{concert.Artiste.StyleMusique}}</p>
         <p class="date"></p>
         <p class="heure">{{formatDate(concert.DateDebut)}}</p>
+        <p class="">{{concert.DateDebut | date}}</p>
         <p class="scene"></p>
         <a href="/artistes#{{concert.Artiste.NomDeScene}}">
           <div class="about">
